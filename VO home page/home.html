@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welkom - HTML & CSS Kennismaking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #dc2626;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .nav-links {
+            margin-top: 1rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffffff 0%, #ffebee 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            padding-top: 120px;  /* Add padding to account for fixed header */
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.2);
+            padding: 60px 40px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #dc2626;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .intro-text {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 50px;
+            line-height: 1.8;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ffebee;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+            
+            .nav-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Kennismaking</h1>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="pagina2.html">artikel</a>
+            <a href="pagina3.html">Contact</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="icon">🎨</div>
+        <h1>Welkom bij HTML & CSS!</h1>
+        <p class="subtitle">Jouw eerste stappen in webontwikkeling</p>
+        
+        <div class="intro-text">
+            <p>
+                Op deze website leer je de basis van webontwikkeling. HTML en CSS zijn de 
+                bouwstenen van elke website die je online tegenkomt. Met HTML bouw je de 
+                structuur en met CSS maak je het mooi en aantrekkelijk!
+            </p>
+            <br>
+            <p>
+                Klik op een van de knoppen hieronder om verder te gaan naar de verschillende 
+                onderdelen van deze website, gemaakt door jouw medeleerlingen.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>skibidi on that thing</p>
+        </div>
+    </div>
+</body>
+</html>
