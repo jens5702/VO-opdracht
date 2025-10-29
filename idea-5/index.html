@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikelen - AI Debug Learning</title>
+  <!-- ❌ FOUT: stylesheet link ontbreekt hier expres -->
+  <style>
+    /* 🔴 Thema: Rood (met een paar kleine fouten om te debuggen) */
+    :root {
+      --color-primary: #E63946;
+      --color-dark: #b92e3b;
+      --color-light: #FFF5F5;
+      --color-text: #222;
+      --color-subtext: #555;
+    }
+
+    body {
+      background-color: var(--color-light);
+      color: var(--color-text);
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--color-primary), var(--color-dark));
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+      /* ❌ kleine fout: verkeerde eigenschapnaam */
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    article {
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--color-light);
+      padding-bottom: 25px;
+    }
+
+    article h2 {
+      color: var(--color-primary);
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    article img {
+      max-width: 100%;
+      border-radius: 10px;
+      /* ❌ typfout in property: studenten moeten corrigeren */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    article p {
+      color: var(--color-subtext);
+      line-height: 1.6;
+    }
+
+    a.read-more {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a.read-more:hover {
+      color: var(--color-dark);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #FBECEC;
+      margin-top: 50px;
+      border-top: 3px solid var(--color-primary);
+      color: var(--color-subtext);
+    }
+
+    /* ❌ fout: ontbrekende accolade sluiting hieronder */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Debug Artikelen</h1>
+    <p>Leer fouten vinden en verbeteren met AI 🔍</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="artikelen.html">Artikelen</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 🧩 Artikel 1 -->
+    <article>
+      <h2>Wat is AI Debugging?</h2>
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Laptop met code">
+      <p>AI Debugging betekent dat je kunstmatige intelligentie (zoals ChatGPT) gebruikt om fouten in je code te vinden. 
+      Zo leer je niet alleen waar iets misgaat, maar ook hoe je het zelf kunt verbeteren.</p>
+      <a class="read-more" href="#">Lees verder →</a>
+    </article>
+
+    <!-- 🧩 Artikel 2 -->
+    <article>
+      <h2>Veelgemaakte HTML-fouten</h2>
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" alt="Code op scherm">
+      <p>Een vaak voorkomende fout is het vergeten van sluit-tags of het verkeerd typen van elementnamen.
+      <!-- ❌ hier ontbreekt expres een </p> -->
+      <a class="read-more" href="#">Lees verder →</a>
+    </article>
+
+    <!-- 🧩 Artikel 3 -->
+    <article>
+      <h2>CSS: Kleine fout, groot effect</h2>
+      <img src="https://images.unsplash.com/photo-1581093588401-22e8b6d3c2b8?w=800" alt="Kleuren en stijlen">
+      <p>In CSS kan één verkeerde letter (zoals ‘color’ in plaats van ‘colour’) zorgen dat een hele stijl niet werkt. 
+      Daarom is het belangrijk om altijd goed te controleren op spelling!</p>
+      <a class="read-more" href="#">Lees verder →</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AI Debug Learning Website – Gemaakt door BitFlare 🔥</p>
+  </footer>
+</body>
+</html>
