@@ -3,153 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welkom - HTML & CSS Kennismaking</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            background-color: #dc2626;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            color: white;
-            margin: 0;
-            font-size: 2rem;
-        }
-
-        .nav-links {
-            margin-top: 1rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        .nav-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ffffff 0%, #ffebee 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            padding-top: 120px;  /* Add padding to account for fixed header */
-        }
-
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.2);
-            padding: 60px 40px;
-            max-width: 800px;
-            width: 100%;
-            text-align: center;
-        }
-
-        h1 {
-            color: #dc2626;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .subtitle {
-            color: #666;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            line-height: 1.6;
-        }
-
-        .intro-text {
-            color: #333;
-            font-size: 1.1em;
-            margin-bottom: 50px;
-            line-height: 1.8;
-            text-align: left;
-            padding: 0 20px;
-        }
-
-        .footer {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #ffebee;
-            color: #999;
-            font-size: 0.9em;
-        }
-
-        .icon {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            
-            .container {
-                padding: 40px 20px;
-            }
-            
-            .nav-button {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Home - Software Development</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responiveniss.css">
 </head>
 <body>
-    <header>
-        <h1>IT inovation Gateway</h1>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="../Artikel-pagina/artikel.html">artikel</a>
-            <a href="../contact/Contact-Form.html">Contact</a>
+    <!-- Navigatie Header -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Soft<span>Dev</span></a>
+            <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Artikel-pagina/artikel.html">Artikelen</a></li>
+                <li><a href="Contact-pagina/Contact-Form.html">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <div class="container">
-        <div class="icon">🎨</div>
-        <h1>IT inovation Gateway!</h1>
-        <p class="subtitle">Jouw eerste stappen in webontwikkeling</p>
-        
-        <div class="intro-text">
-            <p>
-                Op deze website leer je de basis van webontwikkeling. HTML en CSS zijn de 
-                bouwstenen van elke website die je online tegenkomt. Met HTML bouw je de 
-                structuur en met CSS maak je het mooi en aantrekkelijk!
-            </p>
-            <br>
-            <p>
-                Klik op een van de knoppen hieronder om verder te gaan naar de verschillende 
-                onderdelen van deze website, gemaakt door jouw medeleerlingen.
-            </p>
-        </div>
+    <div class="page-wrapper">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="header">
+                <h1>🚀 Welkom bij Software Development</h1>
+                <p>Ontdek de wereld van programmeren en bouw de toekomst!</p>
+            </div>
 
-        <div class="footer">
-            <p>skibidi on that thing</p>
+            <div class="content">
+                <!-- Introductie -->
+                <div class="intro">
+                    <h2>Leer code schrijven en software ontwikkelen</h2>
+                    <p>Ben je geïnteresseerd in technologie, apps en websites? Dan is de opleiding Software Development perfect voor jou! Leer programmeren, werk aan echte projecten en ontwikkel jezelf tot een professionele software developer.</p>
+                </div>
+
+                <!-- Waarom Software Development -->
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="icon">💻</div>
+                        <h3>Praktisch Leren</h3>
+                        <p>Werk aan echte projecten en bouw je eigen portfolio op tijdens de opleiding.</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon">🎯</div>
+                        <h3>Goede Carrièrekansen</h3>
+                        <p>Hoge vraag naar developers met uitstekende salarissen en groeimogelijkheden.</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon">🌟</div>
+                        <h3>Creatief & Technisch</h3>
+                        <p>Combineer creativiteit met technologie en breng je ideeën tot leven.</p>
+                    </div>
+                </div>
+
+                <!-- Wat leer je -->
+                <div class="faq-section">
+                    <h2>📚 Wat leer je?</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Programmeertalen</h3>
+                        <p>Je leert werken met populaire talen zoals Python, JavaScript, Java en C#. Van basis tot gevorderd niveau.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Web Development</h3>
+                        <p>Bouw moderne websites en webapplicaties met HTML, CSS en frameworks zoals React en Vue.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>App Development</h3>
+                        <p>Ontwikkel mobiele apps voor iOS en Android. Leer de nieuwste tools en technieken.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Databases & Backend</h3>
+                        <p>Werk met databases, servers en API's. Leer hoe je data opslaat en beheert.</p>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="contact-form">
+                    <h2>🎓 Klaar voor de volgende stap?</h2>
+                    <p style="text-align: center; margin-bottom: 30px; font-size: 1.1em;">
+                        Ontdek meer over de opleiding Software Development en start jouw carrière in tech!
+                    </p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <h3>📖 Lees Artikelen</h3>
+                            <p>Ontdek interessante artikelen over programmeren, technologie en de opleiding.</p>
+                            <a href="Artikel-pagina/artikel.html" class="submit-btn" style="display: inline-block; text-decoration: none; margin-top: 15px;">Naar Artikelen</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>💬 Neem Contact Op</h3>
+                            <p>Heb je vragen? Neem contact met ons op en we helpen je graag verder!</p>
+                            <a href="Contact-pagina/Contact-Form.html" class="submit-btn" style="display: inline-block; text-decoration: none; margin-top: 15px;">Contact Opnemen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feiten & Cijfers -->
+                <div class="faq-section">
+                    <h2>💡 Wist je dat...</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Er een groot tekort is aan developers?</h3>
+                        <p>In Nederland zijn er momenteel duizenden vacatures voor software developers. De vraag blijft groeien!</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Je kunt werken waar je wilt?</h3>
+                        <p>Veel developers werken remote of hybride. Je hebt de vrijheid om te kiezen waar je werkt.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Iedereen kan leren programmeren?</h3>
+                        <p>Je hoeft geen genie te zijn! Met motivatie, doorzettingsvermogen en goede begeleiding kan iedereen het leren.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Over Software Development</h3>
+                <p>Ontdek de wereld van programmeren en leer hoe je innovatieve software kunt ontwikkelen. De opleiding waar creativiteit en technologie samenkomen!</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Snelle Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="Artikel-pagina/artikel.html">Artikelen</a></li>
+                    <li><a href="Contact-pagina/Contact-Form.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li>📞 +31 (0)12 345 6789</li>
+                    <li>✉️ info@softdev.school</li>
+                    <li>📍 Schoolstraat 123<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234 AB Amsterdam</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Openingstijden</h3>
+                <ul class="footer-links">
+                    <li>Maandag - Vrijdag<br>9:00 - 17:00 uur</li>
+                    <li style="margin-top: 15px;">💡 <strong>Open Dagen</strong><br>Elke eerste zaterdag<br>van de maand</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Software Development Opleiding. Gemaakt voor VO-studenten.</p>
+        </div>
+    </footer>
 </body>
 </html>
