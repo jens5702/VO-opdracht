@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Software Development</title>
+    <link rel="stylesheet" href="style-VO-Opdracht.css">
+
+  
+
+    </head>
+<body>
+    <!-- Navigatie Header -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Soft<span>Dev</span></a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opleiding.html">De Opleiding</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <div class="container">
+        <div class="header">
+            <h1>📧 Contact</h1>
+            <p>Heb je vragen over de opleiding Software Development?</p>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h2>We helpen je graag verder!</h2>
+                <p>Ben je benieuwd naar de opleiding Software Development of wil je meer informatie? Neem gerust contact met ons op. We beantwoorden al je vragen!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <h3>Telefoon</h3>
+                    <p><a href="tel:+31123456789">+31 (0)12 345 6789</a></p>
+                    <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Ma-Vr: 9:00 - 17:00</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">✉️</div>
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:info@softdev.school">info@softdev.school</a></p>
+                    <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Reactie binnen 24 uur</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3>Locatie</h3>
+                    <p>Schoolstraat 123<br>1234 AB Amsterdam</p>
+                    <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Bezoek op afspraak</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Stel je vraag</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="naam">Naam *</label>
+                        <input type="text" id="naam" name="naam" required placeholder="Jouw naam">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mailadres *</label>
+                        <input type="email" id="email" name="email" required placeholder="voorbeeld@email.nl">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefoon">Telefoonnummer</label>
+                        <input type="tel" id="telefoon" name="telefoon" placeholder="06 12345678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="onderwerp">Onderwerp *</label>
+                        <select id="onderwerp" name="onderwerp" required>
+                            <option value="">Kies een onderwerp</option>
+                            <option value="algemeen">Algemene vraag</option>
+                            <option value="toelating">Toelatingseisen</option>
+                            <option value="programma">Studieprogramma</option>
+                            <option value="stage">Stages & Praktijk</option>
+                            <option value="voorlichting">Open dag / Voorlichting</option>
+                            <option value="anders">Anders</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bericht">Je vraag of bericht *</label>
+                        <textarea id="bericht" name="bericht" required placeholder="Typ hier je vraag..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Verstuur bericht</button>
+                    
+                    <div class="success-message" id="successMessage">
+                        ✅ Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.
+                    </div>
+                </form>
+            </div>
+
+            <div class="faq-section">
+                <h2>💡 Veelgestelde vragen</h2>
+                
+                <div class="faq-item">
+                    <h3>Wanneer kan ik langskomen voor meer informatie?</h3>
+                    <p>Je kunt altijd een afspraak maken via telefoon of e-mail. Daarnaast organiseren we regelmatig open dagen waar je de school kunt bezoeken en docenten en studenten kunt spreken.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Hoe snel krijg ik antwoord op mijn vraag?</h3>
+                    <p>We streven ernaar om binnen 24 uur te reageren op e-mails en berichten via het contactformulier. Telefonisch zijn we bereikbaar op werkdagen tussen 9:00 en 17:00 uur.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Kan ik ook WhatsApp gebruiken?</h3>
+                    <p>Momenteel niet, maar je kunt ons altijd bellen of mailen. We zijn druk bezig om meer contactmogelijkheden toe te voegen!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Over Software Development</h3>
+                <p>Ontdek de wereld van programmeren en leer hoe je innovatieve software kunt ontwikkelen. De opleiding waar creativiteit en technologie samenkomen!</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Snelle Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="opleiding.html">De Opleiding</a></li>
+                    <li><a href="carriere.html">Carrière Mogelijkheden</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li>📞 +31 (0)12 345 6789</li>
+                    <li>✉️ info@softdev.school</li>
+                    <li>📍 Schoolstraat 123<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234 AB Amsterdam</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Openingstijden</h3>
+                <ul class="footer-links">
+                    <li>Maandag - Vrijdag<br>9:00 - 17:00 uur</li>
+                    <li style="margin-top: 15px;">💡 <strong>Open Dagen</strong><br>Elke eerste zaterdag<br>van de maand</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Software Development Opleiding. Gemaakt voor VO-studenten.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
