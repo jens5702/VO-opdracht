@@ -6,7 +6,6 @@
     <title>Contact - Software Development</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/form.css">
-    <link rel="stylesheet" href="../css/responiveniss.css">
 
   
 
@@ -19,7 +18,7 @@
             <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../Artikel-pagina/artikel.html">Artikelen</a></li>
+                <li><a href="../Artikel-pagina/artikel.html" class="artikel">Artikelen</a></li>
                 <li><a href="Contact-Form.html" class="active">Contact</a></li>
             </ul>
         </div>
@@ -40,13 +39,13 @@
 
             <div class="contact-grid">
                 <div class="contact-card">
-                    <div class="icon">📞</div>
+                    <div class="telefoon-icon">📞</div>
                     <h3>Telefoon</h3>
                     <p><a href="tel:+31123456789">+31 (0)12 345 6789</a></p>
                     <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Ma-Vr: 9:00 - 17:00</p>
                 </div>
 
-                <div class="contact-card">
+                <div class="contact">
                     <div class="icon">✉️</div>
                     <h3>E-mail</h3>
                     <p><a href="mailto:info@softdev.school">info@softdev.school</a></p>
@@ -62,7 +61,7 @@
             </div>
 
             <div class="contact-form">
-                <h2>Stel je vraag</h2>
+                <h2 class="kop-vraag">Stel je vraag</h2>
                 <form id="contactForm">
                     <div class="form-group">
                         <label for="naam">Naam *</label>
@@ -71,7 +70,7 @@
 
                     <div class="form-group">
                         <label for="email">E-mailadres *</label>
-                        <input type="email" id="email" name="email" required placeholder="voorbeeld@email.nl">
+                        <input type="text" id="email" name="email" required placeholder="voorbeeld@email.nl">
                     </div>
 
                     <div class="form-group">
